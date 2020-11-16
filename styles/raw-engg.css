@@ -341,7 +341,7 @@ ul {
 .footer-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
@@ -365,10 +365,11 @@ ul {
 .list-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .list-content a {
+    margin-right: 2em;
     text-decoration: none;
     color: white;
 }
@@ -419,5 +420,84 @@ ul {
     .gallery-image {
         width: 180px;
         height: 150px;
+    }
+}
+
+@media(max-width:500px) {
+    .header {
+        width: 100%;
+    }
+
+    .navigation-list {
+        display: none;
+    }
+
+    .background-image {
+        width: 100%;
+    }
+
+    .container-content h1 {
+        text-align: center;
+    }
+
+    /* For Image gallery ka section */
+    .gallery-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery {
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-item {
+        width: 70%;
+        margin: auto;
+        height: 70%;
+    }
+
+    .gallery-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* For jobs ka section */
+    .browse_job {
+        width: 90%;
+        margin: auto;
+    }
+
+    .job-row {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+        font-size: 15px;
+
+    }
+
+    .job-row span {
+        font-size: 15px;
+    }
+
+    /* For footer ka section */
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer-left-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 392px) {
+    .hidden-container h2 {
+        font-size: 20px;
     }
 }
